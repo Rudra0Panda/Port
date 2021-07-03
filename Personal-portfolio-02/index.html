@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudra-Portfolio</title>
+    <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+
+  <body>
+    <svg style="width: 0; height: 0"> 
+			<filter id="waveTurbulance" >
+				<feTurbulence baseFrequency="0.002" numOctaves="1">
+				<animate attributeName="baseFrequency" dur="30s" values="0.01; 0.02; 0.01" repeatCount="indefinite"/>
+				</feTurbulence>
+				<feDisplacementMap scale="25" in="SourceGraphic"/>
+			</filter>
+		</svg>
+
+    <div class="cursor">
+      <span class="iconify" style="display: none; transform: translateZ(20px) !important"data-icon="bi:arrow-right" data-inline="false"></span>
+    </div>
+      <div class="menu">
+        <div>
+        <!-- *! //start of navigation  -->
+        <main class="link-hover-after">
+              <div class="ims"></div>
+        </main>
+        <main>
+          <div><span class="link" id="works">WORKS</span></div>
+          <div><span class="link" id="about">ABOUT</span></div>
+          <div><span class="link" id="CONTACT">CONTACT</span></div>
+          <div><span class="link" id="HOME">HOME</span></div>
+        </main>
+      </div>
+         <!-- *! //end of navigation   -->
+      </div>
+    <div class="container">
+      <div class="for-blur">
+        <div class="color-change-2xr"></div>
+      </div>
+      <section id="landing">
+        <!-- //firstgrid -->
+        <div>
+          <!-- logo-grid-->
+          <div>
+            <a class="left logo" href=""><span class="iconify" data-icon="carbon-logo-xing" data-inline="false"></span></a>
+          </div>
+          <!-- logo-grid -->
+
+          <!-- second -->
+          <div>
+            <div id="menu-text">
+              <a id="menu_trigger"><span class="iconify" data-icon="ci:menu-duo" data-inline="false"></span></a>
+            </div>
+          </div>
+          <!-- second -->
+
+          <div id="social">
+            <span><span class="iconify" data-icon="bx-bxl-instagram" data-inline="false"></span></span>
+            <div class="line"></div>
+            <span><span class="iconify" data-icon="bx-bxl-facebook" data-inline="false"></span></span>
+          </div>
+        </div>
+        <!-- //firstgrid -->
+        <div></div>
+        <!-- thirdgrid -->
+        <div>
+          <div>R-U-D-R-A</div>
+          <div><span>ABOUT&nbsp;ME</span><span class="line"></span><span>web&nbsp;dev.</span></div>
+        </div>
+        <!-- thirdgrid -->
+      </section>
+    </div>
+   
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/slick.js"></script>
+    <script src="src/js/aos.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
