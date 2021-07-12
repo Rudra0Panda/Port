@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/js/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      body {
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 0.2fr 1.6fr 0.2fr;
+        padding: 8vh 8vw;
+      }
+      .slider-container {
+        display: grid;
+        height: 84vh;
+
+        grid-template-rows: 1.8fr 0.2fr;
+      }
+      .bane {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <!-- Swiper -->
+    <div></div>
+    <!-- Slider main container -->
+    <div class="slider-container">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide firsr">
+            <div></div>
+            <img src="https://source.unsplash.com/1080x1080" alt="" />
+            
+          </div>
+          <div class="swiper-slide second">
+            <div></div>
+            <img src="https://source.unsplash.com/1080x1080" alt="" />
+          </div>
+          <div class="swiper-slide third">
+            <div></div>
+            <img src="https://source.unsplash.com/1080x1080" alt="" />
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+      integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: false,
+        spaceBetween: 100,
+        mousewheel: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+  //     let tl = gsap.timeline();
+  //     let animate = function(){
+  //    tl.to('.char' , {duration: 1 , backgroundColor:"#000000" , color:"#fff!important" , stagger: .2})
+  // }
+  //     if ( document.querySelector(".firsr").className = " swiper-slide-active" ){
+  //   animate();
+  //     }
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <script>
+      const target = document.querySelector(".bane");
+      const results = Splitting({ target: target });
+    </script>
+  </body>
+</html>
