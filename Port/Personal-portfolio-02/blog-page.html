@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Cheat-Sheets</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"
+      integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-twilight.min.css"
+      integrity="sha512-akb4nfKzpmhujLUyollw5waBPeohuVf0Z5+cL+4Ngc4Db+V8szzx6ZTujguFjpmD076W8LImVIbOblmQ+vZMKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link
+      href="//db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="src/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <style>
+    html {
+      cursor: pointer !important;
+    }
+    body {
+      height: 100vh;
+      background-color: #fffdfb;
+      cursor: pointer;
+    }
+    .container {
+      padding-top: 0px !important;
+    }
+    .blog-content {
+      padding-right: 0px;
+    }
+    h6 {
+      color: #fff;
+      font-family: poppins;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div><a href="index.html"> Home</a></div>
+          <div><a href="work.html"> Works</a></div>
+          <div class="logo">Logo</div>
+          <div><a href="contact.html"> Contact</a></div>
+          <div><a href="blog.htm">Blog</a></div>
+        </nav>
+      </header>
+
+      <div class="blog-container-wrapper">
+        <div></div>
+        <div class="blog-section-content">
+          <div class="blog-content-title">
+            <h1>Will the latest AI Kill programming jobs?</h1>
+          </div>
+          <div class="blog-content-wrapper">
+            <p>
+              So in 2007, Li began working on what would later become GPT-3.0, a
+              collection of 3.2 million images tagged by humans to train an AI
+              algorithm. When his team began using its library to better mark
+              images than humans, the Pentagon believed it was time to look at
+              how artificial intelligence could improve weapons. He created a
+              dataset that, with the help of the National Institute of Standards
+              and Technology (NIST), triggered a race to the top for perfect
+              image recognition.
+            </p>
+            <p>
+              So in 2007, Li began working on what would later become GPT-3.0, a
+              collection of 3.2 million images tagged by humans to train an AI
+              algorithm. When his team began using its library to better mark
+              images than humans, the Pentagon believed it was time to look at
+              how artificial intelligence could improve weapons. He created a
+              dataset that, with the help of the National Institute of Standards
+              and Technology (NIST), triggered a race to the top for perfect
+              image recognition.
+            </p>
+            <p>
+              So in 2007, Li began working on what would later become GPT-3.0, a
+              collection of 3.2 million images tagged by humans to train an AI
+              algorithm. When his team began using its library to better mark
+              images than humans, the Pentagon believed it was time to look at
+              how artificial intelligence could improve weapons. He created a
+              dataset that, with the help of the National Institute of Standards
+              and Technology (NIST), triggered a race to the top for perfect
+              image recognition.
+            </p>
+            <p>
+              So in 2007, Li began working on what would later become GPT-3.0, a
+              collection of 3.2 million images tagged by humans to train an AI
+              algorithm. When his team began using its library to better mark
+              images than humans, the Pentagon believed it was time to look at
+              how artificial intelligence could improve weapons. He created a
+              dataset that, with the help of the National Institute of Standards
+              and Technology (NIST), triggered a race to the top for perfect
+              image recognition.
+            </p>
+            <code onclick="copy()" class="language-css">
+              .blog-content-title { display: flex;
+            </code>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        //If you want to copyText from Element
+        function copy() {
+          let element = document.querySelector("code"); //select the element
+          let elementText = element.textContent; //get the text content from the element
+          copyText(elementText); //use the copyText function below
+        }
+
+        //If you only want to put some Text in the Clipboard just use this function
+        // and pass the string to copied as the argument.
+        function copyText(text) {
+          navigator.clipboard.writeText(text);
+        }
+      </script>
+    </div>
+  </body>
+</html>
