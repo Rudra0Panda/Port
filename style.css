@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: manrope, sans-serif;
+    --primary-color: rgb(54, 54, 255);
+    --secondary-color: #ffffff;
+    --color-dark-background: rgb(10, 10, 10);
+    --color-dark-foreground: rgb(240, 240, 240);
+}
+
+button {
+    padding: .7rem 1.4rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    outline: none;
+    border: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-transform: lowercase;
+    border-radius: 5px;
+}
